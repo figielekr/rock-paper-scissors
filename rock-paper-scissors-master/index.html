@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>
+      <span>ROCK</span>
+      <span>PAPER</span>
+      <span>SCISSORS</span>
+    </h1>
+    <div class="score">
+      <span>SCORE</span>
+      <strong class="points">12</strong>
+    </div>
+  </header>
+  <main>
+    <section class="options">
+      <button class="button button--Paper" data-pick="Paper">
+        <div class="button_image-container">
+          <img src="images/icon-paper.svg" alt="Paper">
+        </div>
+      </button>
+      <button class="button button--Scissors" data-pick="Scissors">
+        <div class="button_image-container">
+          <img src="images/icon-scissors.svg" alt="Scissors">
+        </div>
+      </button>>
+      <button class="button button--Rock" data-pick="Rock">
+        <div class="button_image-container">
+          <img src="images/icon-rock.svg" alt="Rock">
+        </div>
+      </button>>
+      </section>
+    <section class="fight hidden">
+      <div class="pick player">
+        <span class="pick_title">YOU PICKED</span>
+        <div class="pick__container--player">
+          <div class="button button--Paper">
+            <div class="button_image-container">
+              <img src="images/icon-paper.svg" alt="Paper">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="result">
+        <span class="result-text"></span>
+        <button class="result-button">Play again</button>
+      </div>
+      <div class="pick ai">
+        <span class="pick_title">THE HOUSE PICKED</span>
+        <!--<div class="pick_placeholder"></div>-->
+        <div class="pick__container--ai"></div>
+        </div>
+    </section>
+  </main>
+
+  
+<!--  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>-->
+  <script src="app.js"></script>
+</body>
+</html>
